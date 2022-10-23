@@ -1,0 +1,14 @@
+[
+	{
+		"dependencia" : "Estadual"
+	},
+	{
+		"dependencia" : "Municipal"
+	},
+	{
+		"dependencia" : "Privada"
+	},
+	{
+		"dependencia" : "Federal"
+	}
+]

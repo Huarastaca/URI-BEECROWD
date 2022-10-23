@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <title> fillset</title>
+    </head>
+    <body>
+        <form action="" method="get">
+            <fieldset>
+                    <legend>Formulario</legend> <br>
+                    <label for="nome">Nome Completo</label> 
+                    
+                    <br>
+
+                    <input type="text" name="nome" id="nome" value="Alberto">   <!--value ja vai deixar permanentemene escrito o que esta em value--> 
+                    
+                    <br><br>
+
+                    <label for="grau"> Grau de escolaridade </lable> 
+                        
+                    <br>
+                            <input list="graus" required>
+                                <datalist id="graus" required>
+
+                                    <option value="burro">
+                                    <option value="ensino fundamenta">
+                                    <option value="ensino merdio">
+                                    <option value="ensino superior">
+                                    <option value="especialização">
+                                    <option value="mestrado">  
+                                    <option value="doutorado">   
+
+                                </datalist> 
+                                
+                    <br><br>
+                    
+                    
+
+                    <lable for="senha"  >Crie sua senha</lable> 
+                    
+                    <br>
+                    
+                                <input type="password" name="senha" id="senha" required> 
+                                
+                    <br><br>
+                    
+                    <label for="sexo" name="sexo" id="sexo"> Escolha seu genero</label> <br>
+                        
+                        <input type="radio" id="m" name="m">
+                                <lable for="m">Masculino</lable>
+                        
+                        <input type="radio" id="f" name="f">
+                                <lable for="f">Feminino</lable>
+
+                    <br><br>
+                    
+                    <lable for="hobbies" > Hobbies </lable> <br>
+                                
+                                <input type="checkbox" id="praia" name="praia" value = "praia">
+                                <label for="praia">Praia</label>
+                                
+                                <input type="checkbox" id="skate" name="skate" value="skate">
+                                <label for="skate">Skate</label>
+
+                    <br><br>
+
+                    <lable for="fotos" > Fotos </lable> <br>
+                        <input type="file" id="imagen" name="imagen" accept="image/png, image/jpeg">
+
+
+
+                    <br><br>         
+                    <input type="submit" value="Enviar"> 
+                    <input type="reset" value="Limpar Dados">
+            </fieldset>
+        </form>
+    </body>
+</html>
