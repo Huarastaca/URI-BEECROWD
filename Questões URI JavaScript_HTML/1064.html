@@ -1,0 +1,21 @@
+<script>
+var i=0
+total=0;
+media=0;	
+	
+	while (i<6)  {
+		var N=parseFloat(prompt());
+		if (N>0)  {
+			total++;
+			media=media+N;
+			i++
+			}else{
+			i++;
+			}
+	}
+console.log(total+" valores positivos");
+console.log((media/total).toFixed(1));
+
+
+
+</script>

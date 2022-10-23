@@ -1,0 +1,36 @@
+<script>
+var i=0;
+var PAR=0;
+var IMPAR=0;
+var POS=0;
+var NEG=0;
+
+	while(i<5)  {
+		var N=parseInt(prompt());
+				if(N>0)  {
+					POS++;
+					
+				
+				}else if(N<0)  {
+						NEG++;
+						
+				
+				}
+				if(N%2==0)  {
+						PAR++;
+						
+				}else if(N%2!=0)  {
+						IMPAR++;
+						
+				}
+				i++;
+				
+			}
+console.log(PAR+" valor(es) par(es)");
+console.log(IMPAR+" valor(es) impar(es)");
+console.log(POS+" valor(es) positivo(s)");
+console.log(NEG+" valor(es) negativo(s)");
+
+
+
+</script>

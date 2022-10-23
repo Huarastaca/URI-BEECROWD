@@ -1,0 +1,41 @@
+<script>
+var par=[];
+var impar=[];
+var contpar=0;
+var contimpar=0;
+for (var i=0 ; i<15 ; i++)  {
+    x=parseInt(prompt());
+    if (x%2==0)  {
+        par[contpar]=x;
+        contpar++;
+
+    }else{
+        impar[contimpar]=x;
+        contimpar++;
+    }
+    if (contpar==5) {
+        contpar=0;
+        for (var j=0; j<par.length ; j++)  {
+            console.log("par["+ j +"] = "+par[j]);
+        }
+    }else if (contimpar==5) {
+        contimpar=0;
+        for (var j=0 ; j<impar.length ; j++) {
+            console.log("impar[" + j + "] = " + impar[j]);
+        }
+    }
+}
+for (var i=0 ; i<contimpar ; i++) {
+    console.log("impar[" + i + "] = " + impar[i]);
+}
+for (var i=0 ; i<contpar ; i++)  {
+    console.log("par[" + i + "] = " + par[i]);
+}
+
+
+
+
+
+
+
+</script>

@@ -1,0 +1,44 @@
+<script>
+var i=1;
+var grenais=0;
+var inter=0;
+var gremio=0;
+var empates=0;
+
+while (i==1){ 
+        var N=prompt();
+        var a=N.split(" ");
+        var x=parseInt(a[0]);
+        var y=parseInt(a[1]);
+        grenais++;
+
+        if (x>y){
+            inter++;    
+        }else if (x<y)  {
+            gremio++;
+        }else{
+            empates++;
+        }
+               
+        console.log("Novo grenal (1-sim 2-nao)");
+	i=parseFloat(prompt());
+
+  while (i!=1 && i!=2)  {
+	console.log("Novo grenal (1-sim 2-nao)");
+	i=parseFloat(prompt());
+  }
+}       console.log(grenais+" grenais");
+        console.log("Inter: "+inter);
+        console.log("Gremio:"+gremio);
+        console.log("Empates: "+empates);
+        if (inter>gremio) {
+            console.log("Inter venceu mais");
+        }else if (inter<gremio) {
+            console.log("Gremio venceu mais");
+        }else{
+            console.log("Nao houve vencedor");
+        }
+ 
+
+
+</script>

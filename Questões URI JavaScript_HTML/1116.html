@@ -1,0 +1,21 @@
+<script>
+// var qtd=lines.shift();
+// var valores=lines.shift();
+
+var qtd=lines.shift();
+
+	for  (var i=0 ; i<qtd ; i++)  {
+		var valores=lines.shift();
+		var A=valores.split(" ");
+		var x=parseInt(A[0]);
+		var y=parseInt(A[1]);
+	if (y==0)  {
+	    console.log("divisão impossivel");
+	  }else if (y!=0)  {
+				var div=x/y;
+				console.log((div).toFixed(1));
+		}	
+	}
+
+
+</script>

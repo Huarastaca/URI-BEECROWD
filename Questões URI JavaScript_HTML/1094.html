@@ -1,0 +1,38 @@
+<script>
+    var N=parseInt(prompt());
+    var coelhos=0;
+    var ratos=0;
+    var sapos=0;
+ 
+    for (var i=0 ; i<N ; i++){
+        var valores=prompt();
+        var x=valores.split(" ");
+        var a=parseInt(x[0]);
+        var b=x[1];
+        
+        if(b=="C")  {
+            coelhos=coelhos+a;
+
+       }else if(b=="R")  {
+           ratos=ratos+a;
+       
+        }else if(b=="S")  {
+            sapos=sapos+a;
+        }
+    }
+    var total=coelhos+ratos+sapos;
+    var Pcoelhos=coelhos/total*100;
+    var Pratos=ratos/total*100;
+    var Psapos=sapos/total*100;
+
+console.log("Total: "+total+" cobaias");
+console.log("Total de coelhos: "+coelhos);
+console.log("Total de ratos: "+ratos);
+console.log("Total de sapos: "+sapos);
+console.log("Percentual de coelhos: "+Pcoelhos.toFixed(2)+" %");
+console.log("Percentual de ratos: "+Pratos.toFixed(2)+" %");
+console.log("Percentual de sapos: "+Psapos.toFixed(2)+" %");
+
+
+
+</script>

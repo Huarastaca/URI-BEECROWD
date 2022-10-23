@@ -1,0 +1,26 @@
+<script>
+    function arredonda(x) { 
+        var y = x.toFixed(6); if (y.charAt(y.length - 2) == '5' && y.charAt(y.length - 1) == '0') { 
+            var aux = y.split(''); aux[y.length - 2] = '0'; y = parseFloat(aux.join('')); 
+        } else { y = x.toFixed(4); 
+        } return y; }
+
+    var N=parseFloat(prompt());
+    var N2;
+    N2=arredonda(N);
+    var v=[];
+    v.push(N2);
+    var colocar;
+    var colocar2;
+    
+    
+    for (var i=0 ; i<100 ; i++)  {
+    console.log("N["+i+"] = "+v[i]);
+    colocar=N/2;
+    colocar2=arredonda(colocar);
+    v.push(colocar2);
+    N=colocar;
+    }
+    
+
+</script>

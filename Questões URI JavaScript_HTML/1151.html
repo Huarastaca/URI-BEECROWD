@@ -1,0 +1,27 @@
+<script>
+var N=parseInt(prompt());
+
+var a=0;
+var b=1;
+var c;
+var linha="";
+        if (N==1){
+          linha = linha + a;
+}else{
+        linha=linha + a + " " + b;
+}
+  for (var i=0 ; i<N-2 ; i++)  {
+
+        c=a+b;
+        linha=linha + " " + c;
+        a=b;
+        b=c;
+
+}
+console.log(linha);
+document.write(linha);    
+
+
+
+
+</script>

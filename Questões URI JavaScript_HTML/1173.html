@@ -1,0 +1,18 @@
+<script>
+var lista=[];
+var x=parseInt(prompt());
+
+    for (var i=0; i<10 ; i++)  {
+        if (i==0)  {
+            lista.push(x);
+            lista.push(x);
+            console.log("N["+i+"] = "+lista[i]);
+        }else{
+        lista[i]=lista[i]*2;
+    lista.push(lista[i]);
+    console.log("N["+i+"] = "+lista[i]);
+        }
+}
+
+
+</script>

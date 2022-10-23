@@ -1,0 +1,33 @@
+<script>
+var n=parseInt(prompt());
+
+  for (var i=0 ; i<n ;i++)  {
+    var anos=0;
+  var val=prompt();
+  var x=val.split(" ");
+  var PA=parseInt(x[0]);
+  var PB=parseInt(x[1]);
+  var G1=parseFloat(x[2]);
+  var G2=parseFloat(x[3]);
+  while(PA<=PB && anos<=100)  {
+      anos++;
+      PA=Math.trunc(PA+PA*G1/100);
+      PB=Math.trunc(PB+PB*G2/100);  
+      if( anos>100){
+            break;
+        }
+    }
+    if(anos>100){
+        console.log("Mais de 1 seculo.");
+    }else{
+        console.log(anos+" anos.");        
+    }
+  }
+ 
+
+
+
+
+
+
+</script>

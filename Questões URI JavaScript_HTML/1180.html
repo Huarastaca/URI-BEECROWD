@@ -1,0 +1,19 @@
+<script>
+var v=[];
+var N=parseInt(prompt());
+var menor=v[0];
+var posMenor=0;
+for (var i=0 ; i<N ; i++)  {
+    v[i]=parseInt(prompt());
+    if (i==0) {
+        menor=v[i];
+        posMenor=i;
+    }else if (v[i] < menor) {
+        menor=v[i];
+        posMenor=i;
+    }
+}
+console.log("Menor valor: "+menor);
+console.log("Posicao: "+posMenor)
+
+</script>

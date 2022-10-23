@@ -1,0 +1,55 @@
+<script>
+var valores=prompt("xxxx");
+var x=valores.split(" ");
+var A=parseFloat(x[0]);
+var B=parseFloat(x[1]);
+var C=parseFloat(x[2]);
+
+var numeros=[A,B,C];
+
+numeros.sort(function (A,B)
+  {return(B-A); 
+});
+
+var a = numeros[0];
+var b = numeros[1];
+var c = numeros[2];
+
+if (a>=b+c)  {
+  console.log("NAO FORMA TRIANGULO");
+}else{
+if (a*a == b*b + c*c)  {
+  console.log("TRIANGULO RETANGULO");
+ }
+if (a*a > b*b + c*c)  {
+  console.log("TRIANGULO OBTUSANGULO");
+}
+if (a*a < b*b + c*c)  {
+  console.log("TRIANGULO ACUTANGULO");
+}
+if (a==b && a==c)  {
+  console.log("TRIANGULO EQUILATERO");
+}
+if (a==b && a!=c)  {
+  console.log("TRIANGULO ISOSCELES");
+}
+if (a==b && a!=b)  {
+  console.log("TRIANGULO ISOSCELES");
+}
+if (c==b && b!=a)  {
+  console.log("TRIANGULO ISOSCELES");
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+</script>

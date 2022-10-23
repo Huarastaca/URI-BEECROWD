@@ -1,0 +1,26 @@
+<script>
+var v=[];
+var c;
+var N=parseInt(prompt());
+for (var i=0 ; i<N ; i++ )  {
+   var X=parseInt(prompt("até"));
+   var a=0;
+   var b=1;
+   if (X==0) {
+       console.log("Fib(0) = 0")
+   }else if (X==1)  {
+       console.log("Fib(1) = 1")
+   }else{
+   for (var j=0 ;j<X-1 ; j++) {
+       c=a+b;
+       a=b;
+       b=c;
+   }
+   console.log("Fib("+X+") = "+c);
+ }
+}
+
+
+
+
+</script>

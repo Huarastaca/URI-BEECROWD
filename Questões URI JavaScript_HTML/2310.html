@@ -1,0 +1,26 @@
+<script>
+var N=parseInt(prompt());
+var valores=[];
+for ( var i=0 ; i<N ; i++)  {
+    prompt("nome");
+    for (var j=0 ; j<valores.length ; j++)  {
+        valores[j]+=parseInt(prompt());
+    }
+}
+var saques=(valores[3]*100)/valores[0];
+var bloqueios=(valores[4]*100)/valores[1];
+var ataques=(valores[5]*100)/valores[2];
+
+console.log("Pontos de Saque: "+saques.toFixed(2)+" %.");
+console.log("Pontos de Bloqueio: "+bloqueios.toFixed(2)+" %.");
+console.log("Pontos de Ataque: "+ataques.toFixed(2)+" %.");
+
+
+
+
+
+
+
+
+
+</script>

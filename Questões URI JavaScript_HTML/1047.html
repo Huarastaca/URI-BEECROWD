@@ -1,0 +1,36 @@
+<script>
+var tempo=prompt("xxxx");
+var TT=tempo.split(" ");
+
+var t1h=parseInt(TT[0]);
+var t1m=parseInt(TT[1]);
+var t2h=parseInt(TT[2]);
+var t2m=parseInt(TT[3]);
+var PH=0;
+var PM=0;
+
+if (t1h==t2h && t1m==t2m && t1h==t2m)  {
+  console.log("O JOGO DUROU 24 HORA(S) E 0 MINUTO(S)");
+  }else{
+	if (t1h>t2h)  {
+		PH=(24+t2h)-t1h;
+	} else if (t1h<t2h)  {
+		PH=t2h-t1h; 
+	}
+	if (t1m>t2m) {
+	  PM=(60+t2m)-t1m;
+	  if (t1h==t2h)  {
+		  PH=24+PH-1;
+	  }else{
+	    PH=PH-1;
+	  }
+	  }else{
+	    PM=t2m-t1m;
+	  
+	 }
+	  console.log("O JOGO DUROU "+ PH +" HORA(S) E "+ PM +" MINUTO(S)");
+}
+
+
+
+</script>

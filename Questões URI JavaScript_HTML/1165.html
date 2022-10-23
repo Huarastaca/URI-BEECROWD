@@ -1,0 +1,24 @@
+<script>
+  var N=parseInt(prompt());
+  
+  for (var i=0 ; i<N ; i++)  {
+    var verific=0;  
+    var X=parseInt(prompt());
+      
+
+      for (var j=2 ; j<X ; j++)  {
+          if (X%j==0)  {
+            verific++;
+          }
+      }
+      if (verific==0)  {
+            console.log(X+" eh primo");
+          }else{
+            console.log(X+" nao eh primo")
+          }
+    }
+     
+  
+
+
+</script>

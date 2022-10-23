@@ -1,0 +1,22 @@
+<input type="text" id="numero" />
+<input type="submit" id="adivinhar"
+value="tente acertar o numero entre 0 a 100"/>
+
+<script>
+  var segredo=Math.round(Math.random()*100);
+  var caixaDoNumero=document.getElementById("numero");
+  function botaoClicado() {
+    if  (segredo==caixaDoNumero.value)  {
+    alert("Parabens! Voce acertou o numero aleatorio");  
+    }else{
+    alert("Infelizmente voce errou!, o numero era "+segredo);
+     
+  }
+  
+  }
+  var botaoAdivinhar=document.getElementById("adivinhar");
+  botaoAdivinhar.onclick=botaoClicado;
+
+
+
+</script>

@@ -1,0 +1,30 @@
+<canvas id="tela" width="600" height="400" ></canvas>
+<script>
+    var tela=document.getElementById("tela");
+    var c=tela.getContext("2d");
+
+    c.fillStyle="#008000";
+    c.fillRect(0,0,600,400); //verde do brasil
+
+    c.fillStyle="#FFD700";
+    c.beginPath();
+    c.moveTo(300, 10);
+    c.lineTo(10, 200);     //losango do brasil
+    c.lineTo(300, 390);
+    c.lineTo(590, 200);
+    c.fill();
+
+    c.fillStyle="#00008B"
+    c.beginPath();
+    c.arc(300,200,120,0,2*3.14);
+    c.fill();
+
+    
+
+
+
+
+
+
+
+</script>

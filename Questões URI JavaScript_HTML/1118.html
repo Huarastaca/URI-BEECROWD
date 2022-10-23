@@ -1,0 +1,31 @@
+<script>
+
+var val=1;	
+	
+  while (val == 1)  {	
+	var X=parseFloat(prompt());
+	
+	while (X>10 || X<0)  {
+	console.log("nota invalida");
+	X=parseFloat(prompt());
+	}
+	
+	var Y=parseFloat(prompt());
+	  
+	while(Y>10 || Y<0)  {
+	console.log("nota invalida");
+	Y=parseFloat(prompt());
+	}
+	console.log("media = "+((X+Y)/2).toFixed(2));
+	
+	console.log("novo calculo (1-sim 2-nao)");
+	val=parseFloat(prompt());
+
+  while (val!=1 && val!=2)  {
+	console.log("novo calculo (1-sim 2-nao)");
+	val=parseFloat(prompt());
+  }
+}  
+  
+  
+</script>

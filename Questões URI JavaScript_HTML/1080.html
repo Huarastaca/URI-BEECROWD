@@ -1,0 +1,18 @@
+<script>
+ var maior=0;
+ var posmaior=0;
+ var X;
+ 
+ for (var i=0 ; i<100 ; i++)  {
+    var X=parseInt(prompt());
+        if (i==1) {
+            maior=X;
+            posmaior=1;
+        }else if (X>maior)  {
+            maior=X;
+            posmaior=i;
+        }
+}   console.log(maior);
+    console.log(posmaior);
+</script>
+

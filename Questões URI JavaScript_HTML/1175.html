@@ -1,0 +1,22 @@
+<script>
+    var v=[];
+    for (var j=0 ; j<20 ; j++)  {
+        var x=parseInt(prompt());
+        v.push(x);
+    }
+    
+    var n = v.length;
+    var meio = Math.trunc((n-1)/2);
+    var aux;
+    for (var i=0 ; i<=meio ; i++)  {
+        aux=v[i];          
+        v[i]=v[n-i-1];     
+        v[n-i-1]=aux;      
+    }
+    for (var i=0 ;i<20 ;i++)  {
+        console.log("N["+i+"] = "+v[i]);
+    }
+
+</script> 
+
+

@@ -1,0 +1,19 @@
+<script>
+
+//var valores=lines.shift();
+//var valores=prompt("xxxxx");
+
+var valores=lines.shift();
+var X=valores.split(" ");
+
+var a=parseFloat(X[0]);
+var b=parseFloat(X[1]);
+var c=parseFloat(X[2]);
+
+  if (a<b+c && b<a+c && c<a+b)  {
+    console.log("Perimetro = "+(a+b+c).toFixed(1));
+	} else { 
+	  console.log("Area = "+(((a+b)*c)/2).toFixed(1));
+	}
+</script>
+

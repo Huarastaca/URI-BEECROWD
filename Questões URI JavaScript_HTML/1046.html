@@ -1,0 +1,36 @@
+<script>
+var tempo=prompt("XXXX");
+var x=tempo.split(" ");
+
+var tempo1=parseInt(x[0]);
+var tempo2=parseInt(x[1]);
+
+
+if (tempo1==tempo2)  {
+  console.log("O JOGO DUROU 24 HORA(S)");
+} else { if (tempo1>tempo2) {
+			var TT=(tempo2+24)-tempo1;
+			console.log("O JOGO DUROU "+TT+" HORAS(S)");
+		 }else{ if (tempo1<tempo2)  {
+				  var TT=tempo2-tempo1;
+				  console.log("O JOGO DUROU "+TT+" HORAS(S)");
+				  }
+				  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
